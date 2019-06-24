@@ -17,7 +17,7 @@ public class SentimentAnalyzerTest {
     @Test
     public void test() {
 
-        String text = "I am sorry for my behaviour";
+        String text = "Seeing your face makes me reconsider living on this planet.";
         Properties props = new Properties();
         props.setProperty("annotators", "tokenize, ssplit, parse, sentiment");
         StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
