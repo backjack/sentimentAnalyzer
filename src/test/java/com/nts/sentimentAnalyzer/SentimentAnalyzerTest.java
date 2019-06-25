@@ -14,10 +14,10 @@ import java.util.Properties;
 
 public class SentimentAnalyzerTest {
 
-    @Test
-    public void test() {
 
-        String text = "Seeing your face makes me reconsider living on this planet.";
+    public static void test(String text) {
+
+        text = text!=null?text:"Seeing your face makes me reconsider living on this planet.";
         Properties props = new Properties();
         props.setProperty("annotators", "tokenize, ssplit, parse, sentiment");
         StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
